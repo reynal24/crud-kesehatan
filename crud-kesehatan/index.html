@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CRUD Data Pasien</title>
+    <title>CRUD Data Pasien - Update</title>
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            background-color: #e0f7fa; /* Latar belakang menjadi biru muda */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h2 {
+            color: #006064;
+            text-align: center;
+            background-color: #b2ebf2;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #00acc1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background-color: #00897b; /* Warna header tabel menjadi hijau */
+            color: white;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-<h2>Data Pasien</h2>
+<h2>🏥 Sistem Data Pasien Kesehatan (Versi CI/CD Berhasil!)</h2>
 
-<form id="formPasien">
-    <input type="text" id="nama" placeholder="Nama" required>
-    <input type="number" id="umur" placeholder="Umur" required>
-    <input type="text" id="diagnosa" placeholder="Diagnosa" required>
-    <button type="submit">Simpan</button>
+<form id="formPasien" style="text-align: center; margin-bottom: 20px;">
+    <input type="text" id="nama" placeholder="Nama Pasien" required>
+    <input type="number" id="umur" placeholder="Umur Pasien" required>
+    <input type="text" id="diagnosa" placeholder="Diagnosa Penyakit" required>
+    <button type="submit" style="background-color: #008cba; color: white; padding: 5px 15px; border: none; cursor: pointer;">Simpan Data</button>
 </form>
 
 <table border="1">
