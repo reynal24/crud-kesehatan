@@ -23,5 +23,6 @@ jobs:
           ssh -o StrictHostKeyChecking=no ubuntu@3.26.179.153 << 'EOF'
           cd /var/www/crud-kesehatan
           git pull origin main
+          sudo cp -r /var/www/crud-kesehatan/crud-kesehatan/* /var/www/crud-kesehatan/
           sudo systemctl restart nginx
           EOF
